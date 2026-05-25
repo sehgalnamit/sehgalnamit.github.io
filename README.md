@@ -1,59 +1,51 @@
 # namitsehgal-site
 
-Welcome to the **namitsehgal-site** project! This repository hosts a website for publishing articles and guides. Below are the details and instructions for setting up and linking your custom domain.
+Welcome to the **namitsehgal-site** project! This repository hosts a website for publishing articles and guides.
 
 ## Project Structure
 
-The project consists of the following files and directories:
-
-- **_config.yml**: Configuration settings for the site, including title and metadata.
-- **CNAME**: Specifies the custom domain name (namitsehgal.com) for the GitHub Pages site.
-- **index.md**: Main content file for the homepage, written in Markdown.
-- **_posts/**: Contains blog posts in Markdown format.
-- **_layouts/**: Defines the HTML layout for the site.
-- **_includes/**: Contains reusable HTML code for the head section.
-- **assets/**: Contains CSS and JavaScript files for styling and interactivity.
-- **.github/**: Contains GitHub Actions workflow configuration for deployment.
+- **_config.yml**: Site configuration (title, metadata, social links).
+- **index.md**: The professional landing page / homepage.
+- **_posts/**: Directory where your articles (Markdown files) are stored.
+- **.github/workflows/pages.yml**: The CI/CD pipeline that builds and deploys your site to GitHub Pages.
+- **CNAME**: Your custom domain configuration (`namitsehgal.com`).
 - **.gitignore**: Specifies files to be ignored by Git.
 - **README.md**: Documentation for the project.
 
-## Steps to Create the GitHub Repository and Link Your Domain
+## How to Publish Articles & Update the Site
 
-1. **Create a GitHub Repository:**
-   - Go to GitHub and create a new repository named `namitsehgal-site`.
-   - Initialize it with a README file.
+Follow these steps to write a new article and update your website:
 
-2. **Clone the Repository:**
-   - Clone the repository to your local machine using the command:
-     ```
-     git clone https://github.com/yourusername/namitsehgal-site.git
-     ```
+### 1. Create a New Article
+Navigate to the `_posts/` directory and create a new Markdown file. The filename **must** follow the format `YYYY-MM-DD-title.md`.
+Example: `_posts/2026-01-01-welcome.md`
 
-3. **Add Project Files:**
-   - Create the project structure as outlined above in the cloned repository.
-   - Add the necessary files and content.
+### 2. Add Content with Front Matter
+Every article needs "front matter" at the very top to tell Jekyll how to handle it:
 
-4. **Push Changes to GitHub:**
-   - Add, commit, and push your changes:
-     ```
-     git add .
-     git commit -m "Initial commit"
-     git push origin main
-     ```
+```markdown
+---
+layout: post
+title: "Your Article Title"
+date: 2026-01-01
+---
+Your article content goes here...
+```
 
-5. **Configure GitHub Pages:**
-   - Go to the repository settings on GitHub.
-   - Scroll down to the "GitHub Pages" section.
-   - Select the branch (usually `main`) and the root folder for the source.
+### 3. Deploy the Changes
+To update the live website, run these commands in your terminal from the root of the project:
 
-6. **Link Your Domain:**
-   - In the `CNAME` file, add your custom domain name: `namitsehgal.com`.
-   - Go to your domain registrar (e.g., porkbun.com) and set up a CNAME record pointing to `yourusername.github.io`.
+```bash
+# Stage your changes
+git add .
 
-7. **Wait for DNS Propagation:**
-   - It may take some time for the DNS changes to propagate. After that, your site should be accessible at `namitsehgal.com`.
+# Commit your changes
+git commit -m "Add new article: Your Article Title"
 
-8. **Verify the Setup:**
-   - Visit your domain to ensure that it correctly points to your GitHub Pages site.
+# Push to the main branch
+git push origin main
+```
 
-By following these steps, you will have your website hosted on GitHub and linked to your custom domain. Happy publishing!# Workflow trigger - 2026-05-25 13:19:10
+Once you push, the GitHub Actions workflow will automatically trigger, build your site, and deploy the updates to `https://namitsehgal.com/`.
+
+Happy publishing!
