@@ -63,7 +63,7 @@ Trusted partner across Google Cloud Platform (GCP) and Microsoft Azure ecosystem
 
 Whether you are looking to navigate a complex multi-cloud migration, implement secure GenAI automation workflows, or establish robust GovOps compliance frameworks, let’s collaborate to build architectures that drive enterprise scale.
 
-### [Connect on LinkedIn to Discuss an Advisory Engagement](https://www.linkedin.com/in/namit-sehgal)
+### [Connect on LinkedIn to Discuss an Advisory Engagement](https://www.linkedin.com/in/namitsehgal/)
 
 ---
 
