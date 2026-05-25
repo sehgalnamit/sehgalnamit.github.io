@@ -1,37 +1,42 @@
-name: Deploy to GitHub Pages
+name: Build and deploy GitHub Pages
 
 on:
   push:
-    branches:
-      - main
+    branches: [ main ]
 
 permissions:
   contents: write
   pages: write
 
 jobs:
-  deploy:
+  build-and-deploy:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout code
+      - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Setup Ruby
+      - name: Set up Ruby 3.2
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '3.2' # Use Ruby 3.2 for modern bundler compatibility
+          ruby-version: '3.2'
 
       - name: Install dependencies
         run: |
           gem install bundler
-          bundle install
+          bundle install --jobs 4 --retry 3
 
-      - name: Build the site
+      - name: Build site
+        run: bundle exec jekyll build -d ./_site
+
+      - name: Debug: list generated files
         run: |
-          bundle exec jekyll build
+          echo "_site contents:"; ls -la ./_site || true
 
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
+      - name: Configure Pages
+        uses: actions/configure-pages@v3
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v1
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./_site
+          path: ./_site
