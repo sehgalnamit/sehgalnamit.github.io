@@ -1,10 +1,15 @@
-title: Namit Sehgal's Articles
-description: A personal blog for sharing articles and guides.
+title: Namit Sehgal
+description: Software Engineer & Technical Writer. Exploring technology through articles and guides.
 baseurl: ""
 url: "https://namitsehgal.com"
 author:
   name: Namit Sehgal
-  email: namitsehgal@example.com
+  email: sehgalnamit@yahoo.co.in
+
+twitter_username: namitsehgal
+github_username:  sehgalnamit
+linkedin_username: namit-sehgal # Replace with your actual LinkedIn handle
+
 theme: minima
 markdown: kramdown
 plugins:
