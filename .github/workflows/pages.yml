@@ -7,51 +7,37 @@ on:
 permissions:
   contents: write
   pages: write
+  id-token: write
 
 jobs:
-  build-and-deploy:
+  build:
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Set up Ruby 3.2
+      - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: '3.2'
+          bundler-cache: true
 
-      - name: Check Ruby and Bundler
-        run: |
-          ruby --version
-          gem --version
-          gem install bundler --version 2.4.22 || gem install bundler
-          bundler --version
+      - name: Build with Jekyll
+        run: bundle exec jekyll build
 
-      - name: Show Gemfile
-        run: cat Gemfile
-
-      - name: Install dependencies
-        run: bundle install --jobs 4 --retry 3
-
-      - name: Build site (verbose)
-        run: |
-          echo "Working directory: \C:\Users\TS\Documents\git\namitsehgal-site"
-          echo "Files in root:"
-          ls -la
-          echo ""
-          echo "Building Jekyll..."
-          bundle exec jekyll build -d ./_site -V
-
-      - name: Debug: list generated files
-        run: |
-          echo "_site contents:"
-          ls -laR ./_site || echo "_site directory not found"
-
-      - name: Configure Pages
-        uses: actions/configure-pages@v3
-
-      - name: Upload Pages artifact
-        uses: actions/upload-pages-artifact@v1
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v2
         with:
-          path: ./_site
+          path: '_site'
+
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v2
