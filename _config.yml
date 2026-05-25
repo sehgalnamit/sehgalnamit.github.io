@@ -1,0 +1,22 @@
+title: Namit Sehgal's Articles
+description: A personal blog for sharing articles and guides.
+baseurl: ""
+url: "https://namitsehgal.com"
+author:
+  name: Namit Sehgal
+  email: namitsehgal@example.com
+theme: minima
+markdown: kramdown
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+exclude:
+  - README.md
+  - CNAME
+  - .gitignore
+  - .github
+  - assets
+  - _layouts
+  - _includes
+  - _posts
+  - index.md
