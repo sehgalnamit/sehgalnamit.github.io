@@ -10,12 +10,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
 
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '2.7' # Specify the Ruby version
+          ruby-version: '3.2' # Use Ruby 3.2 for modern bundler compatibility
 
       - name: Install dependencies
         run: |
