@@ -21,17 +21,32 @@ jobs:
         with:
           ruby-version: '3.2'
 
-      - name: Install dependencies
+      - name: Check Ruby and Bundler
         run: |
-          gem install bundler
-          bundle install --jobs 4 --retry 3
+          ruby --version
+          gem --version
+          gem install bundler --version 2.4.22 || gem install bundler
+          bundler --version
 
-      - name: Build site
-        run: bundle exec jekyll build -d ./_site
+      - name: Show Gemfile
+        run: cat Gemfile
+
+      - name: Install dependencies
+        run: bundle install --jobs 4 --retry 3
+
+      - name: Build site (verbose)
+        run: |
+          echo "Working directory: \C:\Users\TS\Documents\git\namitsehgal-site"
+          echo "Files in root:"
+          ls -la
+          echo ""
+          echo "Building Jekyll..."
+          bundle exec jekyll build -d ./_site -V
 
       - name: Debug: list generated files
         run: |
-          echo "_site contents:"; ls -la ./_site || true
+          echo "_site contents:"
+          ls -laR ./_site || echo "_site directory not found"
 
       - name: Configure Pages
         uses: actions/configure-pages@v3
