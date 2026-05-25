@@ -7,9 +7,6 @@ title: Home
 
 ## Strategic Technology Leader & Advisor with 22+ years of global experience driving multi-cloud strategy, mission-critical infrastructure modernization, and production-grade Generative AI orchestration. Bridging the gap between complex engineering execution and clear business value.
 
-### [Book a Strategic Architecture Advisory](#)
-### [Explore Open-Source AI POCs on GitHub](https://github.com/sehgalnamit)
-
 ---
 
 ## Executive Summary / Pitch
