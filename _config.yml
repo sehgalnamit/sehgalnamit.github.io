@@ -15,8 +15,3 @@ exclude:
   - CNAME
   - .gitignore
   - .github
-  - assets
-  - _layouts
-  - _includes
-  - _posts
-  - index.md
