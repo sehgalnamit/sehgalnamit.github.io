@@ -6,6 +6,7 @@ author: Namit Sehgal
 categories: [AI, Cloud, Governance, Operations]
 tags: [GovOps, GenAI, Enterprise, DevOps]
 excerpt: "As enterprises transition from experimental GenAI proofs-of-concept to production-grade agentic workflows, traditional DevOps is no longer sufficient. Introducing GovOps: the operational discipline that bridges governance, observability, and AI at scale."
+hashnode_url: https://articles.namitsehgal.com/introducing-govops-the-mandatory-governance-operating-model-for-enterprise-genai-and-cloud-platforms
 ---
 
 # Introducing GovOps: The Mandatory Governance Operating Model for Enterprise GenAI and Cloud Platforms

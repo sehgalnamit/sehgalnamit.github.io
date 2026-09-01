@@ -6,6 +6,7 @@ author: Namit Sehgal
 categories: [AI, Cloud, Enterprise]
 tags: [GenAI, Sourcing, Governance, Contracts]
 excerpt: "Traditional software procurement is fundamentally broken when applied to Generative AI. Learn strategic ecosystem orchestration and cognitive failure liability allocation."
+hashnode_url: https://articles.namitsehgal.com/the-cloud-leader-s-guide-to-ai-sourcing-architecting-ecosystems-and-contractual-governance
 ---
 
 # The Cloud Leader's Guide to AI Sourcing: Architecting Ecosystems and Contractual Governance

@@ -6,6 +6,7 @@ author: Namit Sehgal
 categories: [AI, Cloud, Operations, Governance]
 tags: [GovOps, FinOps, Observability, GenAI]
 excerpt: "As enterprise adoption of GenAI accelerates, standard cloud management models are insufficient. GovOps bridges Cloud Governance, FinOps, and advanced Observability to safely manage AI and cloud platforms at scale."
+hashnode_url: https://articles.namitsehgal.com/govops-operating-model-driving-governance-finops-and-observability-in-the-era-of-generative-ai
 ---
 
 # GovOps Operating Model: Driving Governance, FinOps, and Observability in the Era of Generative AI
