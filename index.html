@@ -3,172 +3,215 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Namit Sehgal | Enterprise Cloud & AI Advisory</title>
+    <title>Namit Sehgal | Enterprise AI Forward Engineering & Runtime Governance</title>
+    <meta name="description" content="We help enterprise teams architect, govern, and observe multi-agent AI systems in production. Secure by design, audit-ready for regulatory frameworks like MAS SAFR.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body { font-family: 'Inter', ui-sans-serif, system-ui, sans-serif; }
+        .bg-grid {
+            background-image: linear-gradient(to right, rgba(148,163,184,0.08) 1px, transparent 1px),
+                               linear-gradient(to bottom, rgba(148,163,184,0.08) 1px, transparent 1px);
+            background-size: 44px 44px;
+        }
+        .glow-border { box-shadow: 0 0 0 1px rgba(34,211,238,0.12), 0 0 40px -18px rgba(34,211,238,0.45); }
+        .glow-border:hover { box-shadow: 0 0 0 1px rgba(34,211,238,0.35), 0 0 55px -14px rgba(34,211,238,0.6); }
+    </style>
 </head>
-<body class="bg-slate-900 text-slate-100 font-sans antialiased">
+<body class="bg-[#090D16] text-slate-100 antialiased">
 
-    <header class="border-b border-slate-800 bg-slate-900/80 backdrop-blur sticky top-0 z-50">
-        <div class="max-w-5xl mx-auto px-6 py-4 flex justify-between items-center">
-            <span class="text-xl font-bold tracking-tight text-white">Namit Sehgal</span>
-            <nav class="space-x-6 text-sm font-medium text-slate-400">
-                <a href="#about" class="hover:text-sky-400 transition">About</a>
-                <a href="#expertise" class="hover:text-sky-400 transition">Expertise</a>
-                <a href="#articles" class="hover:text-sky-400 transition">Articles</a>
-                <a href="#impact" class="hover:text-sky-400 transition">Track Record</a>
-                <a href="#contact" class="px-4 py-2 bg-sky-600 text-white rounded-md hover:bg-sky-500 transition">Advisory</a>
+    <header class="border-b border-white/10 bg-[#090D16]/80 backdrop-blur sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <span class="text-lg font-bold tracking-tight text-white">Namit Sehgal <span class="text-cyan-400">·</span> <span class="text-slate-400 font-medium">AI Governance Practice</span></span>
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-400">
+                <a href="#pillars" class="hover:text-cyan-400 transition">Architecture</a>
+                <a href="#framework" class="hover:text-cyan-400 transition">Framework First</a>
+                <a href="#insights" class="hover:text-cyan-400 transition">Blueprints</a>
+                <a href="#contact" class="px-4 py-2 bg-cyan-500 text-[#090D16] font-semibold rounded-md hover:bg-cyan-400 transition">Book Architecture Review</a>
             </nav>
         </div>
     </header>
 
-    <section class="max-w-5xl mx-auto px-6 py-24 text-center lg:text-left flex flex-col lg:flex-row items-center justify-between gap-12">
-        <div class="max-w-3xl">
-            <h1 class="text-4xl lg:text-5xl font-extrabold tracking-tight text-white mb-6 leading-tight">
-                Transforming Enterprise Architecture into Governed, <span class="text-transparent bg-clip-text bg-gradient-to-r from-sky-400 to-indigo-400">AI-Ready Cloud Estates</span>
+    <!-- Hero -->
+    <section class="relative overflow-hidden bg-grid">
+        <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_rgba(34,211,238,0.18),_transparent_60%)]"></div>
+        <div class="relative max-w-5xl mx-auto px-6 pt-24 pb-20 text-center">
+            <span class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-cyan-400/30 bg-cyan-400/5 text-xs font-medium text-cyan-300 mb-8">
+                <i data-lucide="shield-check" class="w-3.5 h-3.5"></i>
+                Runtime Governance for Regulated AI
+            </span>
+            <h1 class="text-4xl lg:text-6xl font-extrabold tracking-tight text-white mb-6 leading-tight">
+                Enterprise AI Forward Engineering &amp;
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">Governance at Runtime</span>
             </h1>
-            <p class="text-lg text-slate-400 mb-8 leading-relaxed">
-                Strategic Technology Leader & Executive Advisor with 22+ years of global experience driving multi-cloud strategy, mission-critical infrastructure modernization, and production-grade Generative AI orchestration. Bridging complex engineering execution with measurable business value.
+            <p class="text-lg text-slate-400 max-w-2xl mx-auto mb-10 leading-relaxed">
+                We help enterprise teams architect, govern, and observe multi-agent AI systems in production. Secure by design, audit-ready for regulatory frameworks like <span class="text-slate-200 font-medium">MAS SAFR</span>.
             </p>
-            <div class="flex flex-wrap justify-center lg:justify-start gap-4">
-                <a href="#contact" class="px-6 py-3 bg-sky-600 hover:bg-sky-500 text-white font-medium rounded-md shadow-lg shadow-sky-900/20 transition">
-                    Book Strategic Advisory Session
+            <div class="flex flex-wrap items-center justify-center gap-4">
+                <a href="https://articles.namitsehgal.com" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-6 py-3 bg-cyan-500 hover:bg-cyan-400 text-[#090D16] font-semibold rounded-md shadow-lg shadow-cyan-500/20 transition">
+                    Explore Architecture Blueprints
+                    <i data-lucide="arrow-right" class="w-4 h-4"></i>
                 </a>
-                <a href="https://articles.namitsehgal.com" class="px-6 py-3 bg-slate-800 hover:bg-slate-750 text-slate-200 font-medium rounded-md border border-slate-700 transition">
-                    Read Technical Articles
+                <a href="https://www.linkedin.com/in/NamitSehgal" target="_blank" rel="noopener noreferrer" class="px-6 py-3 bg-white/5 hover:bg-white/10 text-slate-200 font-medium rounded-md border border-white/10 transition">
+                    Book Architecture Review
                 </a>
+            </div>
+            <p class="mt-10 text-xs uppercase tracking-widest text-slate-500">For CISOs &middot; Chief Risk Officers &middot; VP Engineering &middot; Enterprise AI Architects &mdash; Finance &amp; Healthcare</p>
+        </div>
+    </section>
+
+    <!-- Service Pillars -->
+    <section id="pillars" class="max-w-6xl mx-auto px-6 py-20 border-t border-white/10">
+        <div class="text-center max-w-2xl mx-auto mb-14">
+            <h2 class="text-3xl font-bold text-white mb-4">Service Pillars</h2>
+            <p class="text-slate-400">Production-grade patterns for running agentic AI safely at enterprise scale.</p>
+        </div>
+        <div class="grid md:grid-cols-2 gap-6">
+            <div class="p-7 rounded-xl bg-white/[0.03] border border-white/10 backdrop-blur-xl glow-border transition">
+                <div class="w-11 h-11 rounded-lg bg-cyan-400/10 border border-cyan-400/20 flex items-center justify-center text-cyan-400 mb-5">
+                    <i data-lucide="network" class="w-5 h-5"></i>
+                </div>
+                <h3 class="text-lg font-semibold text-white mb-2">AI Forward Engineering</h3>
+                <p class="text-sm text-slate-400 leading-relaxed">Multi-agent orchestration, deterministic System 2 rule engines, semantic routing (JEV/Laya), and agentic workflow integration.</p>
+            </div>
+            <div class="p-7 rounded-xl bg-white/[0.03] border border-white/10 backdrop-blur-xl glow-border transition">
+                <div class="w-11 h-11 rounded-lg bg-cyan-400/10 border border-cyan-400/20 flex items-center justify-center text-cyan-400 mb-5">
+                    <i data-lucide="activity" class="w-5 h-5"></i>
+                </div>
+                <h3 class="text-lg font-semibold text-white mb-2">AI Observability &amp; GovOps</h3>
+                <p class="text-sm text-slate-400 leading-relaxed">OpenTelemetry tracing, token cost optimization (FinOps), tiered evaluation pipelines, and real-time execution monitoring.</p>
+            </div>
+            <div class="p-7 rounded-xl bg-white/[0.03] border border-white/10 backdrop-blur-xl glow-border transition">
+                <div class="w-11 h-11 rounded-lg bg-cyan-400/10 border border-cyan-400/20 flex items-center justify-center text-cyan-400 mb-5">
+                    <i data-lucide="lock" class="w-5 h-5"></i>
+                </div>
+                <h3 class="text-lg font-semibold text-white mb-2">Runtime Cloud Security &amp; Governance</h3>
+                <p class="text-sm text-slate-400 leading-relaxed">Zero-trust Policy Decision Point (PDP) sidecars, loopjacking defense, cryptographic action-binding (<span class="font-mono text-cyan-300">H(A) &equiv; H(B)</span>), and MAS SAFR compliance.</p>
+            </div>
+            <div class="p-7 rounded-xl bg-white/[0.03] border border-white/10 backdrop-blur-xl glow-border transition">
+                <div class="w-11 h-11 rounded-lg bg-cyan-400/10 border border-cyan-400/20 flex items-center justify-center text-cyan-400 mb-5">
+                    <i data-lucide="cloud-cog" class="w-5 h-5"></i>
+                </div>
+                <h3 class="text-lg font-semibold text-white mb-2">Multi-Cloud Infrastructure &amp; DevSecOps</h3>
+                <p class="text-sm text-slate-400 leading-relaxed">Production-grade GCP &amp; Azure architecture, Infrastructure-as-Code (Terraform), VPC networking, and resilient CI/CD pipelines.</p>
             </div>
         </div>
     </section>
 
-    <section id="about" class="max-w-5xl mx-auto px-6 py-12 border-t border-slate-800">
-        <div class="bg-gradient-to-r from-slate-950 to-slate-900 p-8 rounded-xl border border-slate-800">
-            <h2 class="text-xs font-semibold uppercase tracking-widest text-sky-400 mb-3">Executive Summary</h2>
-            <p class="text-xl italic text-slate-200 mb-4 font-light">"Building resilient enterprise cloud platforms, not just architectures."</p>
-            <p class="text-slate-400 leading-relaxed">
-                As an infrastructure and digital transformation executive, I partner with C-suite leaders and cross-functional business units to align complex technology roadmaps with core business outcomes. Navigating highly regulated environments, I establish bulletproof governance frameworks, optimize massive multi-cloud ecosystems, and lead high-impact engineering organizations through complex global transformations.
-            </p>
-        </div>
-    </section>
-
-    <section id="expertise" class="bg-slate-950 border-t border-b border-slate-800 py-20">
+    <!-- Framework First -->
+    <section id="framework" class="border-t border-white/10 bg-white/[0.02] py-20">
         <div class="max-w-5xl mx-auto px-6">
-            <h2 class="text-3xl font-bold text-white mb-4 text-center">Strategic Pillars & Capabilities</h2>
-            <p class="text-slate-400 text-center max-w-2xl mx-auto mb-12">Targeted advisory frameworks designed to bring structural optimization, strict governance, and intelligent automation to enterprise infrastructure.</p>
-            
-            <div class="grid md:grid-cols-2 gap-8">
-                <div class="p-6 bg-slate-900 rounded-lg border border-slate-800 hover:border-slate-700 transition">
-                    <div class="text-sky-400 text-2xl mb-4">🤖</div>
-                    <h3 class="text-xl font-semibold text-white mb-2">Generative AI Strategy & Intelligent Automation</h3>
-                    <p class="text-slate-400 text-sm leading-relaxed mb-3">Designing and scaling production-ready GenAI frameworks. Specializing in multi-agent orchestration to shift enterprise operations from human-dependent advisory to automated, real-time decision-making.</p>
-                    <span class="text-xs text-sky-400 font-medium bg-sky-950/50 px-2 py-1 rounded">Multi-Agent Orchestration</span>
+            <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-6 mb-12">
+                <div>
+                    <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-cyan-400/30 bg-cyan-400/5 text-xs font-medium text-cyan-300 mb-4">
+                        <i data-lucide="compass" class="w-3.5 h-3.5"></i> Framework First
+                    </span>
+                    <h2 class="text-3xl font-bold text-white mb-3">Battle-tested patterns, not sales slides.</h2>
+                    <p class="text-slate-400 max-w-xl leading-relaxed">Our open architecture patterns are designed to surface and prevent runtime failure modes <span class="text-slate-200">before</span> code is deployed &mdash; positioned around published, production blueprints and technical leadership rather than client logos.</p>
                 </div>
-                <div class="p-6 bg-slate-900 rounded-lg border border-slate-800 hover:border-slate-700 transition">
-                    <div class="text-sky-400 text-2xl mb-4">🌐</div>
-                    <h3 class="text-xl font-semibold text-white mb-2">Strategic Cloud Transformation & Migration</h3>
-                    <p class="text-slate-400 text-sm leading-relaxed mb-3">Directing end-to-end program ownership and vendor strategies to seamlessly migrate large-scale, mission-critical application workloads to multi-cloud environments (Azure & GCP).</p>
-                    <span class="text-xs text-indigo-400 font-medium bg-indigo-950/50 px-2 py-1 rounded">Multi-Cloud Ecosystems</span>
+            </div>
+            <div class="grid sm:grid-cols-3 gap-6">
+                <div class="p-6 rounded-xl bg-white/[0.03] border border-white/10">
+                    <i data-lucide="pencil-ruler" class="w-5 h-5 text-cyan-400 mb-3"></i>
+                    <h3 class="text-sm font-semibold text-white mb-1">Design</h3>
+                    <p class="text-xs text-slate-400 leading-relaxed">Threat-model agentic workflows and define deterministic guardrails up front.</p>
                 </div>
-                <div class="p-6 bg-slate-900 rounded-lg border border-slate-800 hover:border-slate-700 transition">
-                    <div class="text-sky-400 text-2xl mb-4">🛡️</div>
-                    <h3 class="text-xl font-semibold text-white mb-2">GovOps, Risk & Cloud Economics (FinOps)</h3>
-                    <p class="text-slate-400 text-sm leading-relaxed mb-3">Enforcing architectural guardrails, regulatory compliance structures, and cloud cost-optimization frameworks that deliver massive structural savings without impacting performance.</p>
-                    <span class="text-xs text-emerald-400 font-medium bg-emerald-950/50 px-2 py-1 rounded">Compliance & Cost Optimization</span>
+                <div class="p-6 rounded-xl bg-white/[0.03] border border-white/10">
+                    <i data-lucide="shield-check" class="w-5 h-5 text-cyan-400 mb-3"></i>
+                    <h3 class="text-sm font-semibold text-white mb-1">Govern</h3>
+                    <p class="text-xs text-slate-400 leading-relaxed">Enforce zero-trust policy decisions and cryptographic action-binding at runtime.</p>
                 </div>
-                <div class="p-6 bg-slate-900 rounded-lg border border-slate-800 hover:border-slate-700 transition">
-                    <div class="text-sky-400 text-2xl mb-4">🏗️</div>
-                    <h3 class="text-xl font-semibold text-white mb-2">CTAIO & Enterprise Architecture Advisory</h3>
-                    <p class="text-slate-400 text-sm leading-relaxed mb-3">Providing fractional executive technical oversight, architectural baseline governance, and strategic planning to map complex cloud roadmaps to clear business value.</p>
-                    <span class="text-xs text-amber-400 font-medium bg-amber-950/50 px-2 py-1 rounded">Executive Technical Oversight</span>
+                <div class="p-6 rounded-xl bg-white/[0.03] border border-white/10">
+                    <i data-lucide="line-chart" class="w-5 h-5 text-cyan-400 mb-3"></i>
+                    <h3 class="text-sm font-semibold text-white mb-1">Observe</h3>
+                    <p class="text-xs text-slate-400 leading-relaxed">Trace, evaluate, and cost-optimize every agent execution in production.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="articles" class="max-w-5xl mx-auto px-6 py-20 border-b border-slate-800">
-        <div class="flex flex-col md:flex-row items-start md:items-center justify-between mb-12">
+    <!-- Insights / Content Feed -->
+    <section id="insights" class="max-w-6xl mx-auto px-6 py-20 border-t border-white/10">
+        <div class="flex flex-col md:flex-row items-start md:items-center justify-between mb-12 gap-4">
             <div>
-                <h2 class="text-3xl font-bold text-white mb-2">Technical Insights & Architecture</h2>
-                <p class="text-slate-400">Deep dives into Generative AI implementations, architecture blueprints, and GovOps strategy.</p>
+                <h2 class="text-3xl font-bold text-white mb-2">Featured Blueprints</h2>
+                <p class="text-slate-400">Architecture deep dives published on <span class="text-slate-200">articles.namitsehgal.com</span>.</p>
             </div>
-            <a href="https://articles.namitsehgal.com" class="mt-4 md:mt-0 inline-flex items-center text-sm font-medium text-sky-400 hover:text-sky-300 transition group">
-                Go to Article Hub 
-                <svg class="w-4 h-4 ml-1 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+            <a href="https://articles.namitsehgal.com" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-sm font-medium text-cyan-400 hover:text-cyan-300 transition group shrink-0">
+                Visit the Blueprint Hub
+                <i data-lucide="arrow-right" class="w-4 h-4 ml-1 transform group-hover:translate-x-1 transition-transform"></i>
             </a>
         </div>
-        
-        <div class="grid md:grid-cols-2 gap-8">
-            <div class="p-6 bg-gradient-to-br from-slate-900 to-slate-950 rounded-xl border border-slate-800 flex flex-col justify-between">
+        <div class="grid md:grid-cols-3 gap-6">
+            <a href="https://articles.namitsehgal.com" target="_blank" rel="noopener noreferrer" class="p-6 rounded-xl bg-white/[0.03] border border-white/10 backdrop-blur-xl glow-border transition flex flex-col justify-between">
                 <div>
-                    <span class="text-xs font-semibold uppercase tracking-wider text-indigo-400">Generative AI</span>
-                    <h3 class="text-xl font-bold text-white mt-2 mb-3">Building Production-Grade Multi-Agent Frameworks for Enterprise Advisory</h3>
-                    <p class="text-slate-400 text-sm leading-relaxed mb-6">A technical walkthrough detailing how to transition from brittle human-dependent advisory pipelines to robust, governed AI agents executing automated real-time workflows.</p>
+                    <i data-lucide="shield-alert" class="w-5 h-5 text-cyan-400 mb-4"></i>
+                    <span class="text-xs font-semibold uppercase tracking-wider text-cyan-300">Runtime Security</span>
+                    <h3 class="text-base font-bold text-white mt-2 mb-3 leading-snug">MAS SAFR Runtime Governance &amp; Loopjacking Defense</h3>
                 </div>
-                <a href="https://articles.namitsehgal.com" class="text-sm font-medium text-sky-400 hover:underline">Read full breakdown →</a>
-            </div>
-
-            <div class="p-6 bg-gradient-to-br from-slate-900 to-slate-950 rounded-xl border border-slate-800 flex flex-col justify-between">
+                <span class="text-sm font-medium text-cyan-400">Read the blueprint &rarr;</span>
+            </a>
+            <a href="https://articles.namitsehgal.com" target="_blank" rel="noopener noreferrer" class="p-6 rounded-xl bg-white/[0.03] border border-white/10 backdrop-blur-xl glow-border transition flex flex-col justify-between">
                 <div>
-                    <span class="text-xs font-semibold uppercase tracking-wider text-emerald-400">Cloud Strategy</span>
-                    <h3 class="text-xl font-bold text-white mt-2 mb-3">Navigating 1000+ Workload Migrations in Regulated Financial Environments</h3>
-                    <p class="text-slate-400 text-sm leading-relaxed mb-6">Strategic insights into vendor management, rollback planning, and building FinOps guardrails to achieve multi-region data modernization deadlines securely.</p>
+                    <i data-lucide="gauge" class="w-5 h-5 text-cyan-400 mb-4"></i>
+                    <span class="text-xs font-semibold uppercase tracking-wider text-cyan-300">GovOps</span>
+                    <h3 class="text-base font-bold text-white mt-2 mb-3 leading-snug">GovOps Framework: Governance, FinOps, &amp; Observability at Scale</h3>
                 </div>
-                <a href="https://articles.namitsehgal.com" class="text-sm font-medium text-sky-400 hover:underline">Read core strategy framework ?</a>
-            </div>
+                <span class="text-sm font-medium text-cyan-400">Read the blueprint &rarr;</span>
+            </a>
+            <a href="https://articles.namitsehgal.com" target="_blank" rel="noopener noreferrer" class="p-6 rounded-xl bg-white/[0.03] border border-white/10 backdrop-blur-xl glow-border transition flex flex-col justify-between">
+                <div>
+                    <i data-lucide="route" class="w-5 h-5 text-cyan-400 mb-4"></i>
+                    <span class="text-xs font-semibold uppercase tracking-wider text-cyan-300">Agentic Systems</span>
+                    <h3 class="text-base font-bold text-white mt-2 mb-3 leading-snug">Semantic Routing &amp; JEV Compliance in Agentic Tool Execution</h3>
+                </div>
+                <span class="text-sm font-medium text-cyan-400">Read the blueprint &rarr;</span>
+            </a>
         </div>
     </section>
 
-    <section id="impact" class="max-w-5xl mx-auto px-6 py-20">
-        <h2 class="text-3xl font-bold text-white mb-12 text-center">Proven Enterprise Impact</h2>
-        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
-            <div class="p-6 bg-gradient-to-b from-slate-900 to-slate-950 rounded-xl border border-slate-800">
-                <div class="text-4xl font-extrabold text-sky-400 mb-2">22+</div>
-                <div class="text-xs uppercase tracking-wider text-slate-500 font-medium">Years Global Experience</div>
-            </div>
-            <div class="p-6 bg-gradient-to-b from-slate-900 to-slate-950 rounded-xl border border-slate-800">
-                <div class="text-4xl font-extrabold text-sky-400 mb-2">1000+</div>
-                <div class="text-xs uppercase tracking-wider text-slate-500 font-medium">Workloads Migrated</div>
-            </div>
-            <div class="p-6 bg-gradient-to-b from-slate-900 to-slate-950 rounded-xl border border-slate-800">
-                <div class="text-4xl font-extrabold text-sky-400 mb-2">Multi-BU</div>
-                <div class="text-xs uppercase tracking-wider text-slate-500 font-medium">Data Modernization</div>
-            </div>
-            <div class="p-6 bg-gradient-to-b from-slate-900 to-slate-950 rounded-xl border border-slate-800">
-                <div class="text-4xl font-extrabold text-sky-400 mb-2">Mission</div>
-                <div class="text-xs uppercase tracking-wider text-slate-500 font-medium">Critical AI Delivery</div>
-            </div>
-        </div>
-    </section>
-
-    <section class="border-t border-slate-800 bg-slate-950/40 py-16">
-        <div class="max-w-5xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-8">
+    <!-- Credentials -->
+    <section class="border-t border-white/10 bg-white/[0.02] py-16">
+        <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-8">
             <div>
-                <h3 class="text-lg font-semibold text-white mb-2">Hyperscaler Alliances & Expert Credentials</h3>
-                <p class="text-slate-400 text-sm">Validated platform expertise across leading cloud ecosystems and frameworks.</p>
+                <h3 class="text-lg font-semibold text-white mb-2">22+ Years of Technical Leadership</h3>
+                <p class="text-slate-400 text-sm max-w-md">Credentials across leading cloud and AI ecosystems &mdash; the foundation behind these architecture patterns.</p>
             </div>
             <div class="flex flex-wrap gap-3 max-w-xl justify-start md:justify-end">
-                <span class="text-xs bg-slate-900 border border-slate-700 px-3 py-1.5 rounded-md text-slate-300">Google Professional ML Engineer</span>
-                <span class="text-xs bg-slate-900 border border-slate-700 px-3 py-1.5 rounded-md text-slate-300">Azure AI Engineer Associate</span>
-                <span class="text-xs bg-slate-900 border border-slate-700 px-3 py-1.5 rounded-md text-slate-300">Google Professional Data Engineer</span>
-                <span class="text-xs bg-slate-900 border border-slate-700 px-3 py-1.5 rounded-md text-slate-300">Databricks Platform Architect</span>
+                <span class="text-xs bg-white/5 border border-white/10 px-3 py-1.5 rounded-md text-slate-300">Google Professional ML Engineer</span>
+                <span class="text-xs bg-white/5 border border-white/10 px-3 py-1.5 rounded-md text-slate-300">Azure AI Engineer Associate</span>
+                <span class="text-xs bg-white/5 border border-white/10 px-3 py-1.5 rounded-md text-slate-300">Google Professional Data Engineer</span>
+                <span class="text-xs bg-white/5 border border-white/10 px-3 py-1.5 rounded-md text-slate-300">Databricks Platform Architect</span>
             </div>
         </div>
     </section>
 
-    <section id="contact" class="max-w-3xl mx-auto px-6 py-24 text-center">
-        <h2 class="text-3xl font-bold text-white mb-4">Optimize Your Infrastructure. Accelerate Your AI Roadmap.</h2>
-        <p class="text-slate-400 mb-8 leading-relaxed">
-            Whether you are looking to navigate a complex multi-cloud migration, implement secure GenAI automation workflows, or establish robust GovOps compliance frameworks, let's collaborate to build architectures that drive true enterprise scale.
-        </p>
-        <div class="inline-flex items-center justify-center p-1 bg-slate-800 rounded-lg border border-slate-700">
-            <a href="https://www.linkedin.com/in/NamitSehgal" target="_blank" class="px-6 py-3 bg-sky-600 text-white font-medium rounded-md hover:bg-sky-500 transition">
-                Connect on LinkedIn to Discuss an Advisory Engagement
-            </a>
+    <!-- Contact -->
+    <section id="contact" class="relative overflow-hidden border-t border-white/10">
+        <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom,_rgba(34,211,238,0.12),_transparent_60%)]"></div>
+        <div class="relative max-w-3xl mx-auto px-6 py-24 text-center">
+            <h2 class="text-3xl font-bold text-white mb-4">Let's Architect Your Runtime Governance Layer.</h2>
+            <p class="text-slate-400 mb-8 leading-relaxed">
+                Book a 30-minute AI Architecture &amp; GovOps Consultation to discuss how to govern, observe, and secure your multi-agent AI systems in production.
+            </p>
+            <div class="flex flex-wrap items-center justify-center gap-4">
+                <a href="https://www.linkedin.com/in/NamitSehgal" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-6 py-3 bg-cyan-500 hover:bg-cyan-400 text-[#090D16] font-semibold rounded-md shadow-lg shadow-cyan-500/20 transition">
+                    Book Architecture Review
+                    <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                </a>
+                <a href="https://articles.namitsehgal.com" target="_blank" rel="noopener noreferrer" class="px-6 py-3 bg-white/5 hover:bg-white/10 text-slate-200 font-medium rounded-md border border-white/10 transition">
+                    Explore Architecture Blueprints
+                </a>
+            </div>
         </div>
     </section>
 
-    <footer class="border-t border-slate-800 py-8 text-center text-xs text-slate-500">
-        <p>&copy; 2026 Namit Sehgal. All rights reserved.</p>
+    <footer class="border-t border-white/10 py-8 text-center text-xs text-slate-500">
+        <p>&copy; 2026 Namit Sehgal &middot; <a href="https://articles.namitsehgal.com" target="_blank" rel="noopener noreferrer" class="hover:text-cyan-400 transition">articles.namitsehgal.com</a></p>
     </footer>
 
+    <script>lucide.createIcons();</script>
 </body>
 </html>
